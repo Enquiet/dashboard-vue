@@ -1,0 +1,20 @@
+
+.header{
+  &__login{
+    margin: 0 auto;
+  }
+  background: $color-white;
+  padding: 18px 102px;
+  display: flex;
+  z-index: 100000000;
+  &__list{
+    margin: 0 auto;
+    display: flex;
+  }
+  &__item{
+    &:last-child{
+      margin-left: 10px;
+    }
+  }
+
+}

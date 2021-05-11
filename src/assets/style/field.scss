@@ -1,0 +1,68 @@
+@import '@/assets/style/mixin.scss';
+.form{
+  &__label{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: $color-grey;
+    display: block;
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__field{
+    width: 100%;
+    padding: 8px 20px 9px 20px;
+    border: 1px solid #F2F3F6;
+    box-sizing: border-box;
+    border-radius: 19px;
+    background: transparent;
+    font-weight: normal;
+    &::placeholder{
+      color: $color-grey;
+    }
+  }
+  &__text{
+    color: $color-main;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 23px;
+    .form__label{
+      margin-bottom: 0px;
+    }
+  }
+  &__unit{
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-main;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &__field--finance{
+    padding: 8px 70px 9px 20px;
+    width: 291px;
+  }
+  &__label--finance{
+    width: 134px;
+  }
+  &__inner{
+    width: 140px;
+    position: relative;
+    border: $border;
+    padding: 8px 40px 9px 15px;
+    border-radius: 24px;
+
+  }
+  &__field--percent{
+    padding: 8px 40px 9px 20px;
+  }
+}
